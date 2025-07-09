@@ -1,0 +1,31 @@
+<div class="media-scroll-container">
+  <div class="media-row-container" *ngFor="let row of filteredRows; let categoryIndex = index">
+    <h2 class="media-row-title">{{ row.header }}</h2>
+    <div class="media-scroll-wrapper">
+      <div
+        *ngIf="isArrowVisible(categoryIndex, 'left')"
+        class="scroll-arrow scroll-arrow-left"
+        (click)="scrollLeft(categoryIndex)">
+        <img src="assets/audio_arrow_left.svg" alt="Left" />
+      </div>
+      <div class="media-card-scroll" #videoCardScrolls>
+        <mat-card class="media-card" *ngFor="let item of row.data">
+          <img mat-card-image [src]="getPhotoUrl(item)" alt="{{ item.heading }}" />
+          <mat-icon
+            class="media-icon"
+            matTooltip="Add to Library"
+            matTooltipPosition="right"
+            matTooltipClass="library-tooltip">
+            library_add
+          </mat-icon>
+        </mat-card>
+      </div>
+      <div
+        *ngIf="isArrowVisible(categoryIndex, 'right')"
+        class="scroll-arrow scroll-arrow-right"
+        (click)="scrollRight(categoryIndex)">
+        <img src="assets/audio_arrow_right.svg" alt="Right" />
+      </div>
+    </div>
+  </div>
+</div>
