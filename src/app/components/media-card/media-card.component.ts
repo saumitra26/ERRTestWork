@@ -32,6 +32,7 @@ export class MediaCardComponent implements OnInit, AfterViewInit, OnDestroy {
     this.jupitarService.getMediaCategory().subscribe(mediaValue => {
       const content = mediaValue.data.category.frontPage || [];
       this.filteredRows = content.filter((row: any) => row.highTimeline && row.data?.length);
+      //console.log("Valie",this.filteredRows)
       this.arrowsVisibility = this.filteredRows.map(() => ({ left: false, right: true }));
     });
   }
