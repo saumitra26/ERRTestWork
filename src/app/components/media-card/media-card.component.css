@@ -104,18 +104,48 @@
 
 .scroll-arrow-left {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+ background: linear-gradient(
+    to left,
+    rgba(32, 52, 62, 0.4) 0%,
+    rgba(32, 52, 62, 0.4) 15%,
+    rgba(32, 52, 62, 0.8) 85%,
+    rgba(32, 52, 62, 0.8) 100%
+  );
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
 .scroll-arrow-right {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to right,
+    rgba(32, 52, 62, 0.4) 0%,
+    rgba(32, 52, 62, 0.4) 15%,
+    rgba(32, 52, 62, 0.8) 85%,
+    rgba(32, 52, 62, 0.8) 100%
+  );
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
+.scroll-arrow-left:hover {
+  background: linear-gradient(
+    to left,
+    rgba(28, 44, 54, 0.5) 0%,
+    rgba(28, 44, 54, 0.5) 15%,
+    rgba(28, 44, 54, 0.85) 85%,
+    rgba(28, 44, 54, 0.85) 100%
+  );
+}
 
+.scroll-arrow-right:hover {
+  background: linear-gradient(
+    to right,
+    rgba(28, 44, 54, 0.5) 0%,
+    rgba(28, 44, 54, 0.5) 15%,
+    rgba(28, 44, 54, 0.85) 85%,
+    rgba(28, 44, 54, 0.85) 100%
+  );
+}
 .scroll-arrow img {
   width: 24px;
   height: 24px;
