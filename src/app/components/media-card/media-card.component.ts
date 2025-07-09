@@ -109,7 +109,7 @@ export class MediaCardComponent implements OnInit, AfterViewInit, OnDestroy {
     return item?.verticalPhotos?.[0]?.photoUrlBase;
   }
 
-  isArrowVisible(categoryIndex: number, dirction: 'left' | 'right'): boolean {
-    return this.arrowsVisibility[categoryIndex]?.[dirction] ?? false;
+  isArrowVisible(categoryIndex: number, direction: 'left' | 'right'): boolean {
+    return this.arrowsVisibility[categoryIndex]?.[direction] ?? false;
   }
 }
