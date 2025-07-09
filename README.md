@@ -2,6 +2,25 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+# Environment Requirements
+- Git CLI
+- Node.js :
+- Angular CLI : 19.2.15
+- Angular Material : 19.2.19
+- Built with Angular standalone components  
+
+## Install Angular CLI globally** (if not installed):
+
+```bash
+npm install -g @angular/cli@19.2.15
+```
+# Install project dependencies:
+
+```bash
+npm install
+```
+
+
 ## Development server
 
 To start a local development server, run:
