@@ -4,7 +4,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 # Environment Requirements
 - Git CLI
-- Node.js :
+- Node.js : v22.17.0
 - Angular CLI : 19.2.15
 - Angular Material : 19.2.19
 - Built with Angular standalone components  
